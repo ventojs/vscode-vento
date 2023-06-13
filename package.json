@@ -1,11 +1,16 @@
 {
-  "name": "vento",
-  "displayName": "Vento",
+  "name": "vento-syntax",
+  "displayName": "Vento Template Support",
   "description": "Vento language support",
   "version": "0.0.1",
+  "publisher": "oscarotero",
   "engines": {
     "vscode": "^1.79.0"
   },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/oscarotero/vscode-vento"
+	},
   "categories": [
     "Programming Languages"
   ],
