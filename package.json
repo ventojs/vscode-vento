@@ -1,0 +1,32 @@
+{
+  "name": "vento",
+  "displayName": "Vento",
+  "description": "Vento language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vento",
+      "aliases": ["Vento", "vento"],
+      "extensions": [".vto", ".vento"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vento",
+      "scopeName": "text.html.vento",
+      "path": "./syntaxes/vento.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "vento",
+        "scopename": "text.html.vento",
+        "path": "./snippets/vento.json"
+      }
+    ]
+  }
+}

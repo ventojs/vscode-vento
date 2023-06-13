@@ -1,0 +1,47 @@
+{
+  "include": {
+    "prefix": "include",
+    "body": "{{ include \"${1:path}.vto\" }}\n",
+    "description": "Include a template"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "{{ for ${1:item} of ${2:sequence} }}\n\t$3\n{{ /for }}",
+    "description": "Iterate over arrays, dictionaries, numbers, etc"
+  },
+  "for key,value": {
+    "prefix": "for",
+    "body": "{{ for ${1:key}, ${2:value} of ${3:sequence} %}\n\t$4\n{{ /for }}",
+    "description": "Iterate over arrays, dictionaries capturing the key and value"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "{{ if ${1:expr} }}\n\t$2\n{{ /if }}",
+    "description": "Test a condition"
+  },
+  "else if": {
+    "prefix": "else if",
+    "body": "{{ else if ${1:expr} }}",
+    "description": "Test another condition if the previous condition fails"
+  },
+  "else": {
+    "prefix": "else",
+    "body": "{{ else }}",
+    "description": "Run code if the previous condition fails"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": "{{# ${1:comment} #}}\n",
+    "description": "Insert a comment"
+  },
+  "set": {
+    "prefix": "set",
+    "body": "{{ set ${1:name} = ${2:value} }}\n",
+    "description": "Set a variable"
+  },
+  "html": {
+    "prefix": "html",
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>${1:title}</title>\n</head>\n<body>\n$2\n</body>\n</html>",
+    "description": "Start a HTML document"
+  }
+}

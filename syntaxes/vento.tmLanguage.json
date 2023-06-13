@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Vento",
+  "patterns": [
+    {
+      "begin": "{{#",
+      "end": "#}}",
+      "name": "comment.block.vento"
+    },
+    {
+      "include": "#template_tag"
+    }
+  ],
+  "repository": {
+    "template_tag": {
+      "begin": "{{",
+      "end": "}}",
+      "name": "entity.tag.vento",
+      "contentName": "meta.embedded.block.javascript",
+      "patterns": [
+        {
+          "include": "#template_keyword"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    "template_keyword": {
+      "match": "for|of|if|else if|else|include|set",
+      "name": "keyword.vento"
+    }
+  },
+  "scopeName": "text.html.vento"
+}
