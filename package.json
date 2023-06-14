@@ -4,7 +4,7 @@
   "description": "Vento language support",
   "version": "0.0.2",
   "publisher": "oscarotero",
-  "icon": "images/icon.png",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.79.0"
   },
