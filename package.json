@@ -4,13 +4,14 @@
   "description": "Vento language support",
   "version": "0.0.1",
   "publisher": "oscarotero",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.79.0"
   },
   "repository": {
-		"type": "git",
-		"url": "https://github.com/oscarotero/vscode-vento"
-	},
+    "type": "git",
+    "url": "https://github.com/oscarotero/vscode-vento"
+  },
   "categories": [
     "Programming Languages"
   ],

@@ -11,7 +11,7 @@
   },
   "for key,value": {
     "prefix": "for",
-    "body": "{{ for ${1:key}, ${2:value} of ${3:sequence} %}\n\t$4\n{{ /for }}",
+    "body": "{{ for ${1:key}, ${2:value} of ${3:sequence} }}\n\t$4\n{{ /for }}",
     "description": "Iterate over arrays, dictionaries capturing the key and value"
   },
   "if": {
