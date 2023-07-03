@@ -1,7 +1,7 @@
 {
   "name": "vento-syntax",
   "displayName": "Vento Template Support",
-  "description": "Vento language support",
+  "description": "Language support for the Vento templating language",
   "version": "0.0.2",
   "publisher": "oscarotero",
   "icon": "icon.png",
@@ -24,8 +24,12 @@
     }],
     "grammars": [{
       "language": "vento",
-      "scopeName": "text.html.vento",
-      "path": "./syntaxes/vento.tmLanguage.json"
+      "scopeName": "source.vento",
+      "path": "./syntaxes/vento.tmLanguage.json",
+      "injectTo": ["text.html"],
+      "embeddedLanguages": {
+        "meta.embedded.block.javascript": "source.js"
+      }
     }],
     "snippets": [
       {

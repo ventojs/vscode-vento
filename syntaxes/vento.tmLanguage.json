@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "Vento",
   "patterns": [
     {
@@ -9,6 +8,10 @@
     },
     {
       "include": "#template_tag"
+    },
+    {
+      "name": "html.vento",
+      "include": "text.html.derivative"
     }
   ],
   "repository": {
@@ -31,5 +34,5 @@
       "name": "keyword.vento"
     }
   },
-  "scopeName": "text.html.vento"
+  "scopeName": "source.vento"
 }
