@@ -37,6 +37,11 @@
         "scopename": "text.html.vento",
         "path": "./snippets/vento.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "emmet.includeLanguages": {
+        "vento": "html"
+      }
+    }
   }
 }
