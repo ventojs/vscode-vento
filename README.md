@@ -2,7 +2,7 @@
 
 Vento template syntax definition with some useful snippets.
 
-[Quick Install](vscode:extension/oscarotero.vento-syntax)
+<a href="vscode:extension/oscarotero.vento-syntax"><strong>Quick Install</strong></a>
 
 ![screenshot](screenshot.jpg)
 
