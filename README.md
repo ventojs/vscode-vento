@@ -1,8 +1,6 @@
 # Vento for Visual Studio Code
 
-Vento template syntax definition with some useful snippets.
-
-<a href="vscode:extension/oscarotero.vento-syntax"><strong>Quick Install</strong></a>
+Vento template syntax definition with some useful snippets
 
 ![screenshot](screenshot.jpg)
 
