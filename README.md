@@ -2,6 +2,8 @@
 
 Vento template syntax definition with some useful snippets.
 
+[**Quick Install**](vscode:extension/oscarotero.vento-syntax)
+
 ![screenshot](screenshot.jpg)
 
 ## More information
