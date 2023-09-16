@@ -14,6 +14,46 @@
     "body": "{{ for ${1:key}, ${2:value} of ${3:sequence} }}\n\t$4\n{{ /for }}",
     "description": "Iterate over arrays, dictionaries capturing the key and value"
   },
+  "layout": {
+    "prefix": "layout",
+    "body": "{{ layout \"${1:file.vto}\" }}\n\t$2\n{{ /layout }}",
+    "description": "Render a content inside a layout"
+  },
+  "echo": {
+    "prefix": "echo",
+    "body": "{{ echo ${1:content} }}\n",
+    "description": "Print a variable"
+  },
+  "echo (block)": {
+    "prefix": "echo",
+    "body": "{{ echo }}\n\t$1\n{{ /echo }}",
+    "description": "Print a block of content"
+  },
+  "function name": {
+    "prefix": "function",
+    "body": "{{ function ${1:name} }}\n\t$2\n{{ /function }}",
+    "description": "Create a Vento function"
+  },
+  "function name(arg)": {
+    "prefix": "function",
+    "body": "{{ function ${1:name}(${2:arg}) }}\n\t$3\n{{ /function }}",
+    "description": "Create a Vento function"
+  },
+  "export function name(arg)": {
+    "prefix": "export",
+    "body": "{{ export function ${1:name}(${2:arg}) }}\n\t$3\n{{ /function }}",
+    "description": "Create and export a Vento function"
+  },
+  "import": {
+    "prefix": "import",
+    "body": "{{ import { ${1:name} } from \"${2:file.vto}\" }}",
+    "description": "Import a variable or function from other template"
+  },
+  "export": {
+    "prefix": "export",
+    "body": "{{ export ${1:name} = ${2:value} }}",
+    "description": "Export a variable to be used by other template"
+  },
   "if": {
     "prefix": "if",
     "body": "{{ if ${1:expr} }}\n\t$2\n{{ /if }}",

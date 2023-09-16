@@ -28,7 +28,8 @@
       "path": "./syntaxes/vento.tmLanguage.json",
       "injectTo": ["text.html"],
       "embeddedLanguages": {
-        "meta.embedded.block.javascript": "source.js"
+        "meta.embedded.block.javascript": "source.js",
+        "meta.embedded.block.yaml": "source.yaml"
       }
     }],
     "snippets": [

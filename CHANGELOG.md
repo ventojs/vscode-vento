@@ -4,6 +4,12 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.0.5] - 2023-09-16
+### Added
+- Support for front matter [#2].
+- Support for new keywords `layout`, `echo`.
+- Snippets for the new features (`layout`, `echo`, `function`, `import`, `export`).
+
 ## [0.0.4] - 2023-07-16
 ### Added
 - Emmet support [#1]
@@ -24,7 +30,9 @@ to structure this file.
 Initial release
 
 [#1]: https://github.com/oscarotero/vscode-vento/issues/1
+[#2]: https://github.com/oscarotero/vscode-vento/issues/2
 
+[0.0.5]: https://github.com/oscarotero/vscode-vento/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/oscarotero/vscode-vento/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/oscarotero/vscode-vento/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/oscarotero/vscode-vento/compare/v0.0.1...v0.0.2

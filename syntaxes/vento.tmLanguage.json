@@ -10,6 +10,9 @@
       "include": "#template_tag"
     },
     {
+      "include": "#front_matter"
+    },
+    {
       "name": "html.vento",
       "include": "text.html.derivative"
     }
@@ -30,8 +33,19 @@
       ]
     },
     "template_keyword": {
-      "match": "for|of|if|else if|else|include|set",
+      "match": "for|of|if|else\\s+if|else|include|set|layout|echo",
       "name": "keyword.vento"
+    },
+    "front_matter": {
+      "contentName": "source.yaml",
+      "name": "meta.embedded.block.yaml",
+      "begin": "^---[a-zA-Z0-9_-]*\\s*\\n",
+      "end": "---\\s*\\n",
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
     }
   },
   "scopeName": "source.vento"
