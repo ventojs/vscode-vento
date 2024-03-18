@@ -33,7 +33,7 @@
       ]
     },
     "template_keyword": {
-      "match": "for|of|if|else\\s+if|else|include|set|layout|echo",
+      "match": "for|of|if|else\\s+if|else|include|set|layout|echo|function|import|export|>",
       "name": "keyword.vento"
     },
     "front_matter": {
