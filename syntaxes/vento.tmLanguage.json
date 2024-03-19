@@ -7,6 +7,9 @@
       "name": "comment.block.vento"
     },
     {
+      "include": "#js_code"
+    },
+    {
       "include": "#template_tag"
     },
     {
@@ -18,11 +21,22 @@
     }
   ],
   "repository": {
+    "js_code": {
+      "contentName": "source.js",
+      "name": "meta.embedded.block.javascript",
+      "begin": "{{>",
+      "end": "}}",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
     "template_tag": {
       "begin": "{{",
       "end": "}}",
       "name": "entity.tag.vento",
-      "contentName": "meta.embedded.block.javascript",
+      "contentName": "source.js",
       "patterns": [
         {
           "include": "#template_keyword"
@@ -33,7 +47,7 @@
       ]
     },
     "template_keyword": {
-      "match": "for|of|if|else\\s+if|else|include|set|layout|echo|function|async\\s+function|import|export|>|await",
+      "match": "for|of|if|else\\s+if|else|include|set|layout|echo|function|async\\s+function|import|export|await",
       "name": "keyword.vento"
     },
     "front_matter": {

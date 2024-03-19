@@ -4,6 +4,11 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.0.7] - 2024-03-19
+### Fixed
+- Added `async` and `await` keywords [#4].
+- Improved JavaScript tags (`{{> ... }}`)
+
 ## [0.0.6] - 2024-03-19
 ### Fixed
 - Missing template keywords [#3].
@@ -12,7 +17,8 @@ to structure this file.
 ### Added
 - Support for front matter [#2].
 - Support for new keywords `layout`, `echo`.
-- Snippets for the new features (`layout`, `echo`, `function`, `import`, `export`).
+- Snippets for the new features (`layout`, `echo`, `function`, `import`,
+  `export`).
 
 ## [0.0.4] - 2023-07-16
 ### Added

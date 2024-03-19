@@ -2,7 +2,7 @@
   "name": "vento-syntax",
   "displayName": "Vento Template Support",
   "description": "Language support for the Vento templating language",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "oscarotero",
   "icon": "icon.png",
   "engines": {
