@@ -20,7 +20,11 @@
       "id": "vento",
       "aliases": ["Vento", "vento"],
       "extensions": [".vto", ".vento"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icon.svg",
+        "dark": "./icon.svg"
+      }
     }],
     "grammars": [{
       "language": "vento",
