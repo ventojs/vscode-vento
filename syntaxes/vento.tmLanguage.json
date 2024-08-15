@@ -1,5 +1,13 @@
 {
   "name": "Vento",
+  "scopeName": "source.vento",
+  "injections": {
+    "L:string - (string.quoted.*.html)": {
+      "patterns": [
+        { "include": "source.vento" }
+      ]
+    }
+  },
   "patterns": [
     {
       "begin": "{{#",
@@ -61,6 +69,5 @@
         }
       ]
     }
-  },
-  "scopeName": "source.vento"
+  }
 }
