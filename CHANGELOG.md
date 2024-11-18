@@ -4,6 +4,11 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.0.9] - 2024-11-18
+### Fixed
+- Highlight `from` keyword in `import` statements [#11], [#12]
+- Optimized `screenshot.jpg` file.
+
 ## [0.0.8] - 2024-08-15
 ### Fixed
 - Syntax highlight inside quoted HTML code [#8].
@@ -48,7 +53,10 @@ Initial release
 [#3]: https://github.com/oscarotero/vscode-vento/issues/3
 [#4]: https://github.com/oscarotero/vscode-vento/issues/4
 [#8]: https://github.com/oscarotero/vscode-vento/issues/8
+[#11]: https://github.com/oscarotero/vscode-vento/issues/11
+[#12]: https://github.com/oscarotero/vscode-vento/issues/12
 
+[0.0.9]: https://github.com/oscarotero/vscode-vento/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/oscarotero/vscode-vento/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/oscarotero/vscode-vento/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/oscarotero/vscode-vento/compare/v0.0.5...v0.0.6
