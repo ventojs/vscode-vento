@@ -15,6 +15,9 @@
   "categories": [
     "Programming Languages"
   ],
+  "scripts": {
+    "package": "vsce package"
+  },
   "contributes": {
     "languages": [{
       "id": "vento",
