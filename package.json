@@ -41,6 +41,16 @@
         "language": "vento",
         "scopename": "text.html.vento",
         "path": "./snippets/vento.json"
+      },
+      {
+        "language": "html",
+        "scopename": "text.html.vento",
+        "path": "./snippets/vento.json"
+      },
+      {
+        "language": "markdown",
+        "scopename": "text.html.vento",
+        "path": "./snippets/vento.json"
       }
     ],
     "configurationDefaults": {

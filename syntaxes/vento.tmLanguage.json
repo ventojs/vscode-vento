@@ -8,6 +8,7 @@
       ]
     }
   },
+  "fileTypes": ["vto", "vento", "html", "md"],
   "patterns": [
     {
       "begin": "{{#",
