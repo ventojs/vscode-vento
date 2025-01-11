@@ -41,19 +41,21 @@
         "configuration": "./languages/markdown.language-configuration.json"
       }
     ],
-    "grammars": [{
-      "language": "vento",
-      "scopeName": "source.vento",
-      "path": "./syntaxes/vento.tmLanguage.json",
-      "injectTo": [
-        "text.html.markdown",
-        "text.html"
-      ],
-      "embeddedLanguages": {
-        "meta.embedded.block.javascript": "source.js",
-        "meta.embedded.block.yaml": "source.yaml"
+    "grammars": [
+      {
+        "language": "vento",
+        "scopeName": "source.vento",
+        "path": "./syntaxes/vento.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown",
+          "text.html"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "source.js",
+          "meta.embedded.block.yaml": "source.yaml"
+        }
       }
-    }],
+    ],
     "snippets": [
       {
         "language": "vento",

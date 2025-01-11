@@ -1,0 +1,7 @@
+{
+  "name": "Vento Html",
+  "scopeName": "text.html.vento",
+  "comment": "Vento Template",
+  "fileTypes": ["vto", "vento", "html"],
+  "patterns": [{ "include": "source.vento" }, { "include": "text.html.basic" }]
+}
