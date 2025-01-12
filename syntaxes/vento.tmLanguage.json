@@ -34,7 +34,7 @@
     "js_code": {
       "contentName": "source.js",
       "name": "meta.embedded.block.javascript",
-      "begin": "{{>(-)?",
+      "begin": "{{(-)?>",
       "end": "(-)?}}",
       "patterns": [
         {
