@@ -8,6 +8,8 @@
       ]
     }
   },
+  "injectionSelector": "L:text.html -meta.embedded -comment , text.html.markdown -comment",
+  "fileTypes": ["vto", "vento", "html", "md"],
   "patterns": [
     {
       "begin": "{{#",
@@ -32,8 +34,8 @@
     "js_code": {
       "contentName": "source.js",
       "name": "meta.embedded.block.javascript",
-      "begin": "{{>",
-      "end": "}}",
+      "begin": "{{(-)?>",
+      "end": "(-)?}}",
       "patterns": [
         {
           "include": "source.js"
@@ -41,9 +43,9 @@
       ]
     },
     "template_tag": {
-      "begin": "{{",
-      "end": "}}",
-      "name": "entity.tag.vento",
+      "begin": "{{(-)?",
+      "end": "(-)?}}",
+      "name": "punctuation.definition.tag.vento",
       "contentName": "source.js",
       "patterns": [
         {
