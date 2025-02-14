@@ -29,16 +29,6 @@
           "light": "./icon.svg",
           "dark": "./icon.svg"
         }
-      },
-      {
-        "id": "html",
-        "extensions": [".html"],
-        "configuration": "./languages/html.language-configuration.json"
-      },
-      {
-        "id": "markdown",
-        "extensions": [".md"],
-        "configuration": "./languages/markdown.language-configuration.json"
       }
     ],
     "grammars": [
@@ -46,10 +36,6 @@
         "language": "vento",
         "scopeName": "source.vento",
         "path": "./syntaxes/vento.tmLanguage.json",
-        "injectTo": [
-          "text.html.markdown",
-          "text.html"
-        ],
         "embeddedLanguages": {
           "meta.embedded.block.javascript": "source.js",
           "meta.embedded.block.yaml": "source.yaml"

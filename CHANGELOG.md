@@ -4,6 +4,11 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.1.1] - 2025-02-14
+### Fixed
+- Remove Vento comments in HTML and Markdown files.
+- Fix `<script>` highlight breaking in HTML files [#16].
+
 ## [0.1.0] - 2025-01-12
 ### Changed
 - Enable Vento snippets and syntax for HTML and Markdown [#14]
@@ -60,7 +65,9 @@ Initial release
 [#11]: https://github.com/oscarotero/vscode-vento/issues/11
 [#12]: https://github.com/oscarotero/vscode-vento/issues/12
 [#14]: https://github.com/oscarotero/vscode-vento/issues/14
+[#16]: https://github.com/oscarotero/vscode-vento/issues/16
 
+[0.1.1]: https://github.com/oscarotero/vscode-vento/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/oscarotero/vscode-vento/compare/v0.0.9...v0.1.0
 [0.0.9]: https://github.com/oscarotero/vscode-vento/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/oscarotero/vscode-vento/compare/v0.0.7...v0.0.8
