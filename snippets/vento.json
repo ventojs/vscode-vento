@@ -41,7 +41,7 @@
   },
   "export function name(arg)": {
     "prefix": "export",
-    "body": "{{ export function ${1:name}(${2:arg}) }}\n\t$3\n{{ /function }}",
+    "body": "{{ export function ${1:name}(${2:arg}) }}\n\t$3\n{{ /export }}",
     "description": "Create and export a Vento function"
   },
   "import": {
