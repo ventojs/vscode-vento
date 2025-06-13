@@ -27,7 +27,7 @@
     },
     {
       "name": "html.vento",
-      "include": "text.html.derivative"
+      "include": "text.html.basic"
     }
   ],
   "repository": {
