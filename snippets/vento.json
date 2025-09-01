@@ -14,10 +14,25 @@
     "body": "{{ for ${1:key}, ${2:value} of ${3:sequence} }}\n\t$4\n{{ /for }}",
     "description": "Iterate over arrays, dictionaries capturing the key and value"
   },
+  "break": {
+    "prefix": "break",
+    "body": "{{ break }}",
+    "description": "Terminate the current loop"
+  },
+  "continue": {
+    "prefix": "continue",
+    "body": "{{ continue }}",
+    "description": "Terminate the current iteration and continues the loop with the next iteration"
+  },
   "layout": {
     "prefix": "layout",
     "body": "{{ layout \"${1:file.vto}\" }}\n\t$2\n{{ /layout }}",
     "description": "Render a content inside a layout"
+  },
+  "slot": {
+    "prefix": "slot",
+    "body": "{{ slot ${1:name} }}\n\t$2\n{{ /slot }}",
+    "description": "Create a slot with content for the current layout"
   },
   "echo": {
     "prefix": "echo",
