@@ -94,6 +94,11 @@
     "body": "{{ set ${1:name} = ${2:value} }}\n",
     "description": "Set a variable"
   },
+  "default": {
+    "prefix": "default",
+    "body": "{{ default ${1:name} }}\n\t$2\n{{ /default }}",
+    "description": "Set the default value for a variable"
+  },
   "html": {
     "prefix": "html",
     "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>${1:title}</title>\n</head>\n<body>\n$2\n</body>\n</html>",
