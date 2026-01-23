@@ -31,6 +31,10 @@
     }
   ],
   "repository": {
+    "template_keyword": {
+      "match": "\\b(?:for|of|if|else\\s+if|else|include|set|layout|echo|function|async\\s+function|import|from|export|await|continue|break|slot|default)|/(?:for|if)\\b",
+      "name": "keyword.vento"
+    },
     "js_code": {
       "contentName": "source.js",
       "name": "meta.embedded.block.javascript",
@@ -55,10 +59,6 @@
           "include": "source.js"
         }
       ]
-    },
-    "template_keyword": {
-      "match": "\\b(for|of|if|else\\s+if|else|include|set|layout|echo|function|async\\s+function|import|from|export|await|continue|break|slot|default)\\b",
-      "name": "keyword.vento"
     },
     "front_matter": {
       "contentName": "source.yaml",
