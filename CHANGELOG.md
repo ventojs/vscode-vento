@@ -4,6 +4,10 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.2.3] - 2026-01-24
+### Fixed
+- The `/` in closing tags has the scope of keyword.operator.arithmetic.js [#18] [#20]
+
 ## [0.2.2] - 2026-01-04
 No visible changes.
 
@@ -85,7 +89,10 @@ Initial release
 [#14]: https://github.com/oscarotero/vscode-vento/issues/14
 [#16]: https://github.com/oscarotero/vscode-vento/issues/16
 [#17]: https://github.com/oscarotero/vscode-vento/issues/17
+[#18]: https://github.com/oscarotero/vscode-vento/issues/18
+[#20]: https://github.com/oscarotero/vscode-vento/issues/20
 
+[0.2.3]: https://github.com/oscarotero/vscode-vento/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/oscarotero/vscode-vento/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/oscarotero/vscode-vento/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/oscarotero/vscode-vento/compare/v0.1.2...v0.2.0
