@@ -63,6 +63,11 @@
       "emmet.includeLanguages": {
         "vento": "html"
       }
-    }
+    },
+    "htmlLanguageParticipants": [
+      {
+        "languageId": "vento"
+      }
+    ]
   }
 }
