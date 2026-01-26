@@ -37,8 +37,15 @@
         "scopeName": "source.vento",
         "path": "./syntaxes/vento.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.block.javascript": "source.js",
-          "meta.embedded.block.yaml": "source.yaml"
+          "text.html": "html",
+          "source.css": "css",
+          "source.js": "javascript",
+          "source.python": "python",
+          "source.smarty": "smarty",
+          "source.vento": "vento",
+          "meta.embedded.block.vento": "vento",
+          "meta.embedded.block.javascript": "javascript",
+          "meta.embedded.block.yaml": "yaml"
         }
       }
     ],
