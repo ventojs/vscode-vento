@@ -15,7 +15,6 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [],
   "main": "",
   "extensionDependencies": [
     "vscode.html-language-features"
