@@ -15,6 +15,11 @@
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [],
+  "main": "",
+  "extensionDependencies": [
+    "vscode.html-language-features"
+  ],
   "scripts": {
     "package": "vsce package"
   },
@@ -70,6 +75,11 @@
       "emmet.includeLanguages": {
         "vento": "html"
       }
-    }
+    },
+    "htmlLanguageParticipants": [
+      {
+        "languageId": "vento"
+      }
+    ]
   }
 }
