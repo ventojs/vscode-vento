@@ -4,6 +4,11 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.2.4] - 2026-01-27
+### Fixed
+- HTML injections and embeddings [#8] [#21]
+- Preserve HTML, CSS and JS intellisense in Vento language [#7] [#22]
+
 ## [0.2.3] - 2026-01-24
 ### Fixed
 - The `/` in closing tags has the scope of keyword.operator.arithmetic.js [#18] [#20]
@@ -83,6 +88,7 @@ Initial release
 [#2]: https://github.com/oscarotero/vscode-vento/issues/2
 [#3]: https://github.com/oscarotero/vscode-vento/issues/3
 [#4]: https://github.com/oscarotero/vscode-vento/issues/4
+[#7]: https://github.com/oscarotero/vscode-vento/issues/7
 [#8]: https://github.com/oscarotero/vscode-vento/issues/8
 [#11]: https://github.com/oscarotero/vscode-vento/issues/11
 [#12]: https://github.com/oscarotero/vscode-vento/issues/12
@@ -91,7 +97,10 @@ Initial release
 [#17]: https://github.com/oscarotero/vscode-vento/issues/17
 [#18]: https://github.com/oscarotero/vscode-vento/issues/18
 [#20]: https://github.com/oscarotero/vscode-vento/issues/20
+[#21]: https://github.com/oscarotero/vscode-vento/issues/21
+[#22]: https://github.com/oscarotero/vscode-vento/issues/22
 
+[0.2.4]: https://github.com/oscarotero/vscode-vento/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/oscarotero/vscode-vento/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/oscarotero/vscode-vento/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/oscarotero/vscode-vento/compare/v0.2.0...v0.2.1
