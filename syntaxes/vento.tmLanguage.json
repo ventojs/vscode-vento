@@ -4,31 +4,43 @@
   "injections": {
     "L:source.vento (meta.tag.metadata | meta.tag.structure | meta.tag.inline | meta.tag.object | meta.tag.other | meta.tag.custom | string) -meta.embedded -comment": {
       "patterns": [
-        { "include": "source.vento" }
+        { "include": "source.vento" },
+        { "include": "#attributes" }
       ]
     }
   },
   "fileTypes": ["vto", "vento", "html", "md"],
   "patterns": [
+    { "include": "#comment" },
+    { "include": "#js_code" },
+    { "include": "#template_tag" },
+    { "include": "#front_matter" },
+    { "include": "text.html.basic#core-minus-invalid" },
     {
+      "comment": "Handle the tags containing {{}} ourselves",
+      "begin": "(</?)((?:(?!{{)[^\\s<>])*+)(?<!/)(?={{)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.html" },
+        "2": { "name": "entity.name.tag.html" }
+      },
+      "end": "(?: ?/)?>",
+      "endCaptures": { "0": { "name": "punctuation.definition.tag.end.html" } },
+      "name": "meta.tag.other.vento.html.derivative",
+      "patterns": [
+        { "include": "#comment" },
+        { "include": "#js_code" },
+        { "include": "#template_tag" },
+        { "include": "text.html.basic#attribute" }
+      ]
+    },
+    { "include": "text.html.basic#tags-invalid" }
+  ],
+  "repository": {
+    "comment": {
       "begin": "{{#",
       "end": "#}}",
       "name": "comment.block.vento"
     },
-    {
-      "include": "#js_code"
-    },
-    {
-      "include": "#template_tag"
-    },
-    {
-      "include": "#front_matter"
-    },
-    {
-      "include": "text.html.basic"
-    }
-  ],
-  "repository": {
     "js_code": {
       "begin": "{{(-)?>",
       "end": "(-)?}}",
@@ -64,10 +76,18 @@
       "name": "meta.embedded.block.yaml",
       "begin": "^---[a-zA-Z0-9_-]*\\s*\\n",
       "end": "---\\s*\\n",
+      "patterns": [ { "include": "source.yaml" } ]
+    },
+    "attributes": {
+      "begin": "(?:(?!{{)[^\\x{0020}\"'<>/=\\x{0000}-\\x{001F}\\x{007F}-\\x{009F}\\x{FDD0}-\\x{FDEF}\\x{FFFE}\\x{FFFF}\\x{1FFFE}\\x{1FFFF}\\x{2FFFE}\\x{2FFFF}\\x{3FFFE}\\x{3FFFF}\\x{4FFFE}\\x{4FFFF}\\x{5FFFE}\\x{5FFFF}\\x{6FFFE}\\x{6FFFF}\\x{7FFFE}\\x{7FFFF}\\x{8FFFE}\\x{8FFFF}\\x{9FFFE}\\x{9FFFF}\\x{AFFFE}\\x{AFFFF}\\x{BFFFE}\\x{BFFFF}\\x{CFFFE}\\x{CFFFF}\\x{DFFFE}\\x{DFFFF}\\x{EFFFE}\\x{EFFFF}\\x{FFFFE}\\x{FFFFF}\\x{10FFFE}\\x{10FFFF}])*+(?={{)",
+      "beginCaptures": { "0": { "name": "entity.other.attribute-name.html" } },
+      "end": "(?=\\s*+[^=\\s])",
+      "name": "meta.attribute.vento.$0.html",
       "patterns": [
-        {
-          "include": "source.yaml"
-        }
+        { "include": "#comment" },
+        { "include": "#js_code" },
+        { "include": "#template_tag" },
+        { "include": "text.html.basic#attribute-interior" }
       ]
     }
   }
