@@ -4,6 +4,10 @@ All notable changes to the "vento" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how
 to structure this file.
 
+## [0.2.5] - 2026-01-31
+### Fixed
+- Whitespace-less Vento tags and attributes [#23] [#24]
+
 ## [0.2.4] - 2026-01-27
 ### Fixed
 - HTML injections and embeddings [#8] [#21]
@@ -99,7 +103,10 @@ Initial release
 [#20]: https://github.com/oscarotero/vscode-vento/issues/20
 [#21]: https://github.com/oscarotero/vscode-vento/issues/21
 [#22]: https://github.com/oscarotero/vscode-vento/issues/22
+[#23]: https://github.com/oscarotero/vscode-vento/issues/23
+[#24]: https://github.com/oscarotero/vscode-vento/issues/24
 
+[0.2.5]: https://github.com/oscarotero/vscode-vento/compare/v0.2.4...v0.2.5
 [0.2.4]: https://github.com/oscarotero/vscode-vento/compare/v0.2.3...v0.2.4
 [0.2.3]: https://github.com/oscarotero/vscode-vento/compare/v0.2.2...v0.2.3
 [0.2.2]: https://github.com/oscarotero/vscode-vento/compare/v0.2.1...v0.2.2
